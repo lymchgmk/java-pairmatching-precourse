@@ -13,6 +13,7 @@ public class InputView {
 
     public static String fairMatchingFunction() {
         System.out.println(SELECT_CLM_MENU);
+        System.out.println(SELECT_CLM_MSG);
         return Console.readLine();
     }
 

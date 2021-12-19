@@ -8,11 +8,10 @@ public class OutputView {
 
     public static void printMatchingResult(List<String> fairs) {
         System.out.println(FAIR_RESULT_MSG);
-        for (int i = 0; i < fairs.size(); i+=2) {
-            String singleFair = fairs.get(i);
-            singleFair += " : " + fairs.get(i+1);
-            if (fairs.size() % 2 == 1 && i == fairs.size() - 1) {
-                singleFair += " : " + fairs.get(i);
+        for (int i = 0; i < fairs.size() / 2; i++) {
+            String singleFair = fairs.get(2*i) + " : " + fairs.get(2*i + 1);
+            if (fairs.size() % 2 == 1 && i == fairs.size() / 2 - 1) {
+                singleFair += " : " + fairs.get(fairs.size() - 1);
             }
             System.out.println(singleFair);
         }

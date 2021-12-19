@@ -25,4 +25,9 @@ public class Constants {
 
     public static final String CLM_PATTERN = "^(?<course>[a-zA-Z가-힣0-9]+),\\s?(?<level>[a-zA-Z가-힣0-9]+),\\s?(?<mission>[a-zA-Z가-힣0-9]+)$";
 
+    public static final String FILE_PATH(String courseName) {
+        final String 백엔드 = "backend";
+        final String 프론트엔드 = "frontend";
+        return "src/main/resources/backend-crew.md";
+    }
 }
